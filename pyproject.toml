@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "eahub"
+version = "0.1.0"
+description = ""
+authors = []
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Django = "^3.2.6"
+django-allauth = "^0.45.0"
+django-username-email = "^2.4.2"
+django-adminutils = "^0.0.10"
+django-modeladmin-reorder = { url = "https://github.com/bloodwithmilk25/django-modeladmin-reorder/archive/6cc5060dec2fe1e894c3ba17aeb703b56737c3e8.zip" } # for django 3.2 support
+django-ninja = "^0.13.2"
+django-import-export = "^2.5.0"
+django-enumfields = "^2.1.1"
+django-solo = "^1.1.5"
+django-logentry-admin = "^1.1.0"
+django-select2 = "^7.7.1"
+dj-database-url = "^0.5.0"
+djangorestframework = "^3.12.4"
+djangorestframework-simplejwt = "^4.7.2"
+django-extensions = "^3.1.3" # mostly for manage.py shell_plus
+    ipython = "^7.26.0"
+drf-yasg = "^1.20.0"
+sentry-sdk = "^1.3.1"
+psycopg2-binary = "^2.9.1"
+python-environ = "^0.4.54"
+python-dotenv = "^0.19.0"
+uvicorn = "^0.15.0"
+gunicorn = "^20.1.0"
+whitenoise = "^5.3.0"
+
+[tool.poetry.dev-dependencies]
+isort = "^5.9.3"
+black = "^21.7b0"
+Faker = "^8.11.0"
+model-bakery = "^1.3.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+target-version = ['py39']
+line-length = 97
+
+[tool.isort]
+force_single_line = true
+line_length = 97
+lines_after_imports = 2
